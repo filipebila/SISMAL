@@ -8,12 +8,14 @@
 	* Módulo cadastro material
 		# Estruturar com DataFrame e armazenar em um csv;
 		# Cada cadastro checar se já existe a OMSE - caso positivo atualizar o dado - caso negativo criar.
+		# Definir estrutura de cadastro de numeração de lacres e starlock
 
 	* Módulo planejamento material
 		# Estruturar a distribuição dos documentos considerando candidatos / setores
 		# Definir as regras para formação dos pacotes de prova
 		# Definir mensagem de erro para quantidades insuficientes
 		# Definir a quantidade de malotes
+		# Definir estrutura de distribuição da numeração de lacres e starlock
 
 	* Módulo cálculo de carga
 		# Estruturar a rotina de cálculo de carga

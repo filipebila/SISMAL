@@ -8,7 +8,6 @@
 	* Módulo cadastro material
 		# Estruturar com DataFrame e armazenar em um csv;
 		# Cada cadastro checar se já existe a OMSE - caso positivo atualizar o dado - caso negativo criar.
-		# 
 
 	* Módulo planejamento material
 		# Estruturar a distribuição dos documentos considerando candidatos / setores

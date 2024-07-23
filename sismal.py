@@ -11,7 +11,7 @@ def cadastro_omse():
     omse = {}
     omse['Número da OMSE'] = int(input('Número da OMSE: '))
     omse['Organização Militar'] = input('Organização Militar: ')
-    omse['Quantidade de Candidatos'] = int(input('Quantidade de CAndidatos: '))
+    omse['Quantidade de Candidatos'] = int(input('Quantidade de Candidatos: '))
     omse['Endereço da OM'] = input('Endereço da OM: ')
     omse['Local de prova'] = input('Endereço do local de prova: ')
     omse['Quantidade de setores de prova'] = int(input('Quantidade de setores: '))
@@ -22,16 +22,20 @@ def cadastro_omse():
     omse['Quantidade de Setores ate 33'] = int(input('Quantidade de setores até 33: '))
     omse['Quantidade de Setores ate 39'] = int(input('Quantidade de setores até 39: '))
     omse['Quantidade de Setores ate 45'] = int(input('Quantidade de setores até 45: '))
-    omse['Quantidade de Setores ate 99'] = int(input('Quantidade de setores até 99: '))      
+    omse['Quantidade de Setores ate 99'] = int(input('Quantidade de setores até 99: '))   
+       
+    print(omse)
     
-    arquivo_csv = 'omse.csv'
+    return omse
+
     
-    with open(arquivo_csv, mode='a', newline='') as file:
-        writer = csv.DictWriter(file, fieldnames=omse.keys())
-        writer.writeheader()
-        writer.writerow(omse)
+    
+   # with open(arquivo_csv, mode='a', newline='') as file:
+    #    writer = csv.DictWriter(file, fieldnames=omse.keys())
+     #   writer.writeheader()
+      #  writer.writerow(omse)
           
-    print('Dados salvos')
+   
     
 
     #Cadastrando materiais
@@ -48,7 +52,12 @@ def cadastro_omse():
     
 def main():
     #candidatos, salas = cadastro_omse()
-    cadastro_omse()
+    omse = cadastro_omse()
+    omse_df = pd.DataFrame(omse, index= [omse['Número da OMSE']])
+    
+    omse_df.to_csv('omse.csv')
+    
+    print('Dados salvos')
     #peso_volumes(candidatos, salas)
     #gera_guia()
     

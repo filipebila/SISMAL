@@ -1,6 +1,5 @@
 #Estrutura principal do programa de planejamento e execução da logística de transporte de material universitário
 
-
 #Importando as bibliotecas necessárias
 import pandas as pd
 import csv
@@ -52,9 +51,9 @@ def cadastro_omse():
     
 def main():
     #candidatos, salas = cadastro_omse()
-    omse = cadastro_omse()
-    omse_df = pd.DataFrame(omse, index= [omse['Número da OMSE']])
-    
+    omse_df = pd.read_csv('omse.csv')
+    new_omse = cadastro_omse()
+    omse_df = omse_df.append(new_omse, ignore_index=True)
     omse_df.to_csv('omse.csv')
     
     print('Dados salvos')

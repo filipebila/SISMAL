@@ -1,2 +1,5 @@
-,Número da OMSE,Organização Militar,Quantidade de Candidatos,Endereço da OM,Local de prova,Quantidade de setores de prova,Quantidade de Setores ate 12,Quantidade de Setores ate 22,Quantidade de Setores ate 27,Quantidade de Setores ate 33,Quantidade de Setores ate 39,Quantidade de Setores ate 45,Quantidade de Setores ate 99
-3,3,BC,44,fgdhrftg,jyufg,8,4,5,0,0,0,0,0
+,Unnamed: 0.1,Unnamed: 0,Número da OMSE,Organização Militar,Quantidade de Candidatos,Endereço da OM,Local de prova,Quantidade de setores de prova,Quantidade de Setores ate 12,Quantidade de Setores ate 22,Quantidade de Setores ate 27,Quantidade de Setores ate 33,Quantidade de Setores ate 39,Quantidade de Setores ate 45,Quantidade de Setores ate 99
+0,0.0,0.0,100,OM Modelo,4000,"Rua Modelo, Nr 4000.","Rua Modelo 1, Nr 4001",100,20,20,20,20,20,0,0
+1,1.0,1.0,1,3 RM,1000,"Av Ipiranga, Nr 1000.","Av Ipiranga, Nr 1001.",30,5,5,5,5,5,5,0
+2,2.0,,22,22 BC,200,Rua 22,Ru 23,22,2,2,2,2,2,12,0
+3,,,33,33 BC,333,Rua 33,Rua 34,33,3,10,10,10,0,0,0
